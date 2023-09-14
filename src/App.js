@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Header } from "./components/Header";
 
 const AppContainer = styled.div`
     display: flex;
@@ -8,7 +9,7 @@ const AppContainer = styled.div`
 function App() {
     return (
         <AppContainer>
-            <header>Header</header>
+            <Header name="Ashley Williams" />
             <main>Main</main>
             <footer>Footer</footer>
         </AppContainer>
