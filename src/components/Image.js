@@ -10,7 +10,7 @@ export const Image = ({ imagePath, altText }) => {
     // https://res.cloudinary.com/studentsamskipnaden-i-s-r-st-norge/image/upload/w_200,h_200,c_fill,f_auto/v1693484600/Testmappe/pexels-mikhail-nilov-6592676_nbgeg8.jpg
     // https://www.youtube.com/watch?v=_lQvw2vSDbs&t=338s
 
-    // useRef to get width/height and apply in src
+    // useRef to get width/height and apply in src ?
 
     const baseUrl =
         "https://res.cloudinary.com/studentsamskipnaden-i-s-r-st-norge/image/upload";

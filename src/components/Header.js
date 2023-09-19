@@ -1,18 +1,22 @@
 import { styled } from "styled-components";
 import { colors } from "../utils/colors";
 import { Image } from "./Image";
+import { Bio } from "./Bio";
 
 const StyledHeader = styled.header`
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
-    position: relative;
     overflow: hidden;
+`;
+
+const Cover = styled.div`
+    position: relative;
     &:before {
         content: "";
         width: 100%;
-        height: 100%;
+        height: 90%;
         background-color: ${colors.backgroundBlue};
         position: absolute;
         z-index: -1;
@@ -34,29 +38,16 @@ const NameHeader = styled.h1`
     font-size: 4.2rem;
 `;
 
-export const Header = ({ name }) => {
+export const Header = ({ name, image, bioText }) => {
     return (
         <StyledHeader>
-            <ImageContainer>
-                <Image
-                    imagePath={
-                        "v1693484600/Testmappe/pexels-mikhail-nilov-6592676_nbgeg8.jpg"
-                    }
-                    altText="Ashley Williams"
-                />
-                <NameHeader>{name}</NameHeader>
-            </ImageContainer>
-
-            {/* <div>
-                <h2>About me</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Neque suscipit officia necessitatibus labore voluptatum! Ab
-                    voluptas obcaecati nulla excepturi eius debitis fuga,
-                    quibusdam explicabo repellendus quod, hic voluptate sequi
-                    laboriosam!
-                </p>
-            </div> */}
+            <Cover>
+                <ImageContainer>
+                    <Image imagePath={image} altText={name} />
+                    <NameHeader>{name}</NameHeader>
+                </ImageContainer>
+            </Cover>
+            <Bio text={bioText} />
         </StyledHeader>
     );
 };
