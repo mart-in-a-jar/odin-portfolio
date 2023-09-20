@@ -1,4 +1,4 @@
 export const colors = {
     backgroundBlue: "#0891b2",
-    nameHeading: "white",
+    white: "#F2F2F2",
 };

@@ -1,9 +1,11 @@
 import { styled } from "styled-components";
 import { Header } from "./components/Header";
+import { WorkExperience } from "./components/WorkExperience";
 
 const AppContainer = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 80px;
 `;
 
 const bioText =
@@ -19,7 +21,7 @@ function App() {
                 }
                 bioText={bioText}
             />
-            <main>Main</main>
+            <WorkExperience />
             <footer>Footer</footer>
         </AppContainer>
     );

@@ -29,8 +29,8 @@ const ImageContainer = styled.div`
     position: relative;
 `;
 
-const NameHeader = styled.h1`
-    color: ${colors.nameHeading};
+const NameHeading = styled.h1`
+    color: ${colors.white};
     position: absolute;
     bottom: 0;
     text-shadow: 1px 1px 5px black;
@@ -44,7 +44,7 @@ export const Header = ({ name, image, bioText }) => {
             <Cover>
                 <ImageContainer>
                     <Image imagePath={image} altText={name} />
-                    <NameHeader>{name}</NameHeader>
+                    <NameHeading>{name}</NameHeading>
                 </ImageContainer>
             </Cover>
             <Bio text={bioText} />
