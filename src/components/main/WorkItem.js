@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { colors } from "../utils/colors";
-import { ReactComponent as GithubIcon } from "./img/github.svg";
-import { ReactComponent as LinkIcon } from "./img/link.svg";
-import { Image } from "./Image";
+import { colors } from "../../utils/colors";
+import { ReactComponent as GithubIcon } from "../img/github.svg";
+import { ReactComponent as LinkIcon } from "../img/link.svg";
+import { Image } from "../Image";
 
 const WorkItemContainer = styled.div`
     width: 100%;

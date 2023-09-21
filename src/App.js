@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
-import { Header } from "./components/Header";
-import { WorkExperience } from "./components/WorkExperience";
+import { Header } from "./components/header/Header";
+import { WorkExperience } from "./components/main/WorkExperience";
+import { Footer } from "./components/footer/Footer";
+import { personal } from "./utils/person";
 
 const AppContainer = styled.div`
     display: flex;
@@ -8,21 +10,19 @@ const AppContainer = styled.div`
     gap: 80px;
 `;
 
-const bioText =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptate quidem autem deserunt asperiores neque harum sint ab quod voluptatem minima ipsum tempore, libero aperiam in fugiat illo veniam possimus.";
-
 function App() {
     return (
         <AppContainer>
             <Header
-                name="Ashley Williams"
-                image={
-                    "v1693484600/Testmappe/pexels-mikhail-nilov-6592676_nbgeg8.jpg"
-                }
-                bioText={bioText}
+                name={personal.name}
+                image={personal.images.header}
+                bioText={personal.bio}
             />
             <WorkExperience />
-            <footer>Footer</footer>
+            <Footer
+                image={personal.images.footer}
+                contactInfo={personal.contactInfo}
+            />
         </AppContainer>
     );
 }

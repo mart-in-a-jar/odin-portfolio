@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import { colors } from "../utils/colors";
-import { Image } from "./Image";
+import { colors } from "../../utils/colors";
+import { Image } from "../Image";
 import { Bio } from "./Bio";
 
 const StyledHeader = styled.header`

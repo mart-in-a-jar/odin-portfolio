@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { SocialIcons } from "./SocialIcons";
-import { StyledHeading } from "./Heading";
+import { SocialIcons } from "../SocialIcons";
+import { StyledHeading } from "../Heading";
 
 const BioText = styled.p`
     line-height: 1.4em;

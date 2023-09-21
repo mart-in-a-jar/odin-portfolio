@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { StyledHeading } from "./Heading";
-import { work } from "../utils/work";
+import { StyledHeading } from "../Heading";
+import { work } from "../../utils/person";
 import { WorkItem } from "./WorkItem";
 
 const Main = styled.main``;
