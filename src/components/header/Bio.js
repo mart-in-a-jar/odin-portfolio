@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { SocialIcons } from "../SocialIcons";
 import { StyledHeading } from "../Heading";
+import { colors } from "../../utils/colors";
 
 const BioText = styled.p`
     line-height: 1.4em;
@@ -9,14 +10,28 @@ const BioText = styled.p`
 
 const StyledBio = styled.section`
     padding: 5px 12px;
+    background-color: ${colors.white};
+    @media screen and (width >= 660px) {
+        padding: 35px 25px;
+        margin: 120px auto 0;
+        width: 80%;
+        box-shadow: 2px 2px 5px 1px #22222230;
+    }
 `;
 
-export const Bio = ({ text }) => {
+const Wrapper = styled.div`
+    padding-bottom: 5px;
+`;
+
+export const Bio = ({ text, children }) => {
     return (
-        <StyledBio>
-            <StyledHeading>About me</StyledHeading>
-            <BioText>{text}</BioText>
-            <SocialIcons />
-        </StyledBio>
+        <Wrapper>
+            {children}
+            <StyledBio>
+                <StyledHeading>About me</StyledHeading>
+                <BioText>{text}</BioText>
+                <SocialIcons />
+            </StyledBio>
+        </Wrapper>
     );
 };

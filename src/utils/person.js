@@ -47,7 +47,7 @@ const personal = {
         header: "v1693484600/Testmappe/pexels-mikhail-nilov-6592676_nbgeg8.jpg",
         footer: "v1695289496/Testmappe/brooke-cagle-JBwcenOuRCg-unsplash_iwlcnu.jpg",
     },
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptate quidem autem deserunt asperiores neque harum sint ab quod voluptatem minima ipsum tempore, libero aperiam in fugiat illo veniam possimus.",
+    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum exercitationem sequi voluptate? Quas, magnam. Labore ratione animi a itaque numquam dolorum similique magnam, unde maxime quis doloremque voluptate eligendi libero obcaecati esse recusandae repellat. Excepturi maiores itaque eveniet voluptatum velit!",
     contactInfo: {
         text: "Please get in touch if you think our work could be mutually beneficial!",
         address: {

@@ -11,6 +11,17 @@ const Container = styled.div`
         width: 40px;
         height: 40px;
     }
+    @media screen and (width >= 660px) and (width < 990px) {
+        display: none;
+    }
+
+    @media screen and (width >= 990px) {
+        justify-content: end;
+        & a {
+            width: 30px;
+            height: 30px;
+        }
+    }
 `;
 
 export const SocialIcons = () => {
