@@ -21,6 +21,7 @@ const StyledBio = styled.section`
 
 const Wrapper = styled.div`
     padding-bottom: 5px;
+    max-width: 1500px;
 `;
 
 export const Bio = ({ text, children }) => {

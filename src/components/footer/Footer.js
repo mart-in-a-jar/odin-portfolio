@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
 import { StyledHeading } from "../Heading";
-import { SocialIcons } from "../SocialIcons";
+import { SocialIcons } from "../SocialIconsFooter";
 import { Image } from "../Image";
 
 const StyledFooter = styled.footer`
@@ -10,6 +10,11 @@ const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     row-gap: 55px;
+    @media screen and (width >= 660px) {
+        flex-direction: row;
+        padding: 45px;
+        gap: 20px;
+    }
 `;
 
 const FooterInfo = styled.div`
@@ -26,7 +31,14 @@ const ContactInfo = styled.p`
     }
 `;
 
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+    @media screen and (width >= 660px) {
+        flex-basis: 70%;
+    }
+    @media screen and (width >= 990px) {
+        flex-basis: 120%;
+    }
+`;
 
 const StyledLink = styled.a`
     color: inherit;
