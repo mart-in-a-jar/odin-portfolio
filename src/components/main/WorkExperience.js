@@ -15,6 +15,10 @@ const Main = styled.main`
     }
     @media screen and (width >= 660px) {
     }
+    @media screen and (width >= 1550px) {
+        width: 1550px;
+        align-self: center;
+    }
 `;
 const WorkItems = styled.div`
     margin-top: 15px;
