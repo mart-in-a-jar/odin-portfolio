@@ -5,10 +5,11 @@ import { Bio } from "./Bio";
 
 const StyledHeader = styled.header`
     display: flex;
+    align-items: center;
     flex-direction: column;
     overflow: hidden;
+
     @media screen and (width >= 660px) {
-        display: block;
         position: relative;
         margin: 0;
         &:before {
@@ -25,14 +26,16 @@ const StyledHeader = styled.header`
 
 const Cover = styled.div`
     position: relative;
-    &:before {
-        content: "";
-        width: 100%;
-        height: 90%;
-        background-color: ${colors.backgroundBlue};
-        position: absolute;
-        z-index: -1;
-        clip-path: polygon(0% 100%, 100% 55%, 100% 0%, 0% 0%);
+    @media screen and (width < 660px) {
+        &:before {
+            content: "";
+            width: 100%;
+            height: 90%;
+            background-color: ${colors.backgroundBlue};
+            position: absolute;
+            z-index: -1;
+            clip-path: polygon(0% 100%, 100% 55%, 100% 0%, 0% 0%);
+        }
     }
     @media screen and (width >= 660px) {
         float: left;
@@ -43,10 +46,11 @@ const ImageContainer = styled.div`
     padding: 35px;
     position: relative;
     @media screen and (width >= 660px) {
+        max-width: 500px;
         padding: 0;
         aspect-ratio: 1;
         width: 40vw;
-        margin: -85px 20px 20px 35px;
+        margin: 35px 20px 20px 35px;
     }
 `;
 
@@ -65,7 +69,7 @@ const NameHeading = styled.h1`
         font-size: 3rem;
     }
     @media screen and (width >= 990px) {
-     bottom: 0;   
+        bottom: 0;
     }
 `;
 

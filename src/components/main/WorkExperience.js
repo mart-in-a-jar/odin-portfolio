@@ -13,6 +13,8 @@ const Main = styled.main`
     @media screen and (width >= 770px) {
         padding: 0 70px;
     }
+    @media screen and (width >= 660px) {
+    }
 `;
 const WorkItems = styled.div`
     margin-top: 15px;
@@ -22,7 +24,7 @@ const WorkItems = styled.div`
     justify-items: center;
     gap: 30px;
     @media screen and (width >= 790px) {
-     gap: 50px;   
+        gap: 50px;
     }
 `;
 

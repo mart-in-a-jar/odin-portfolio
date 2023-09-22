@@ -13,8 +13,8 @@ const StyledBio = styled.section`
     background-color: ${colors.white};
     @media screen and (width >= 660px) {
         padding: 35px 25px;
-        margin: 120px auto 0;
-        width: 80%;
+        margin: 120px 35px 0 100px;
+        max-width: 90%;
         box-shadow: 2px 2px 5px 1px #22222230;
     }
 `;

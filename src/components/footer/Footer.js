@@ -12,6 +12,7 @@ const StyledFooter = styled.footer`
     row-gap: 55px;
     @media screen and (width >= 660px) {
         flex-direction: row;
+        justify-content: center;
         padding: 45px;
         gap: 20px;
     }
@@ -19,6 +20,12 @@ const StyledFooter = styled.footer`
 
 const FooterInfo = styled.div`
     padding: 30px 12px;
+    @media screen and (width >= 660px) {
+        max-width: 500px;
+        & h1 {
+            text-align: left;
+        }
+    }
 `;
 
 const ContactText = styled.p`
@@ -32,6 +39,7 @@ const ContactInfo = styled.p`
 `;
 
 const ImageContainer = styled.div`
+    max-width: 700px;
     @media screen and (width >= 660px) {
         flex-basis: 70%;
     }

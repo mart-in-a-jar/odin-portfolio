@@ -11,6 +11,9 @@ const Container = styled.div`
         width: 40px;
         height: 40px;
     }
+    @media screen and (width >= 660px) {
+        justify-content: flex-start;
+    }
 `;
 
 export const SocialIcons = () => {
